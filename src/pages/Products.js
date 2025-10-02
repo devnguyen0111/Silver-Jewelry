@@ -1,33 +1,35 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { products, categories } from '../data/products';
-import './Products.css';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { products, categories } from "../data/products";
+import "./Products.css";
 
 const Products = () => {
-  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [selectedCategory, setSelectedCategory] = useState("all");
   const [filteredProducts, setFilteredProducts] = useState(products);
-  const [sortBy, setSortBy] = useState('name');
+  const [sortBy, setSortBy] = useState("name");
 
   useEffect(() => {
     let filtered = products;
 
     // Filter by category
-    if (selectedCategory !== 'all') {
-      filtered = filtered.filter(product => product.category === selectedCategory);
+    if (selectedCategory !== "all") {
+      filtered = filtered.filter(
+        (product) => product.category === selectedCategory
+      );
     }
 
     // Sort products
     filtered = [...filtered].sort((a, b) => {
       switch (sortBy) {
-        case 'price-low':
+        case "price-low":
           return a.price - b.price;
-        case 'price-high':
+        case "price-high":
           return b.price - a.price;
-        case 'rating':
+        case "rating":
           return b.rating - a.rating;
-        case 'name':
+        case "name":
         default:
-          return a.name.localeCompare(b.name, 'vi');
+          return a.name.localeCompare(b.name, "vi");
       }
     });
 
@@ -35,16 +37,16 @@ const Products = () => {
   }, [selectedCategory, sortBy]);
 
   const formatPrice = (price) => {
-    return new Intl.NumberFormat('vi-VN', {
-      style: 'currency',
-      currency: 'VND'
+    return new Intl.NumberFormat("vi-VN", {
+      style: "currency",
+      currency: "VND",
     }).format(price);
   };
 
   const formatOriginalPrice = (price) => {
-    return new Intl.NumberFormat('vi-VN', {
-      style: 'currency',
-      currency: 'VND'
+    return new Intl.NumberFormat("vi-VN", {
+      style: "currency",
+      currency: "VND",
     }).format(price);
   };
 
@@ -57,7 +59,9 @@ const Products = () => {
       <div className="products-header">
         <div className="container">
           <h1 className="page-title">Sản phẩm</h1>
-          <p className="page-subtitle">Khám phá bộ sưu tập trang sức bạc cao cấp của chúng tôi</p>
+          <p className="page-subtitle">
+            Khám phá bộ sưu tập trang sức bạc cao cấp của chúng tôi
+          </p>
         </div>
       </div>
 
@@ -68,10 +72,12 @@ const Products = () => {
             <div className="category-filter">
               <h3>Danh mục</h3>
               <div className="category-buttons">
-                {categories.map(category => (
+                {categories.map((category) => (
                   <button
                     key={category.id}
-                    className={`category-btn ${selectedCategory === category.id ? 'active' : ''}`}
+                    className={`category-btn ${
+                      selectedCategory === category.id ? "active" : ""
+                    }`}
                     onClick={() => setSelectedCategory(category.id)}
                   >
                     {category.name}
@@ -82,8 +88,8 @@ const Products = () => {
 
             <div className="sort-filter">
               <h3>Sắp xếp theo</h3>
-              <select 
-                value={sortBy} 
+              <select
+                value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
                 className="sort-select"
               >
@@ -97,33 +103,38 @@ const Products = () => {
 
           {/* Products Grid */}
           <div className="products-grid">
-            {filteredProducts.map(product => (
+            {filteredProducts.map((product) => (
               <div key={product.id} className="product-card">
                 <Link to={`/product/${product.id}`} className="product-link">
                   <div className="product-image">
                     <img src={product.image} alt={product.name} />
                     {product.originalPrice > product.price && (
                       <div className="discount-badge">
-                        -{getDiscountPercentage(product.originalPrice, product.price)}%
+                        -
+                        {getDiscountPercentage(
+                          product.originalPrice,
+                          product.price
+                        )}
+                        %
                       </div>
                     )}
                     {!product.inStock && (
-                      <div className="out-of-stock-badge">
-                        Hết hàng
-                      </div>
+                      <div className="out-of-stock-badge">Hết hàng</div>
                     )}
                   </div>
-                  
+
                   <div className="product-info">
                     <div className="product-category">{product.category}</div>
                     <h3 className="product-name">{product.name}</h3>
-                    
+
                     <div className="product-rating">
                       <div className="stars">
                         {[...Array(5)].map((_, i) => (
-                          <span 
-                            key={i} 
-                            className={`star ${i < Math.floor(product.rating) ? 'filled' : ''}`}
+                          <span
+                            key={i}
+                            className={`star ${
+                              i < Math.floor(product.rating) ? "filled" : ""
+                            }`}
                           >
                             ★
                           </span>
@@ -135,7 +146,9 @@ const Products = () => {
                     </div>
 
                     <div className="product-price">
-                      <span className="current-price">{formatPrice(product.price)}</span>
+                      <span className="current-price">
+                        {formatPrice(product.price)}
+                      </span>
                       {product.originalPrice > product.price && (
                         <span className="original-price">
                           {formatOriginalPrice(product.originalPrice)}
@@ -157,15 +170,15 @@ const Products = () => {
                 </Link>
 
                 <div className="product-actions">
-                  <button 
-                    className={`btn btn-primary ${!product.inStock ? 'disabled' : ''}`}
+                  <button
+                    className={`btn btn-primary ${
+                      !product.inStock ? "disabled" : ""
+                    }`}
                     disabled={!product.inStock}
                   >
-                    {product.inStock ? 'Thêm vào giỏ' : 'Hết hàng'}
+                    {product.inStock ? "Thêm vào giỏ" : "Hết hàng"}
                   </button>
-                  <button className="btn btn-secondary">
-                    💖
-                  </button>
+                  <button className="btn btn-secondary">Yêu thích</button>
                 </div>
               </div>
             ))}
@@ -177,9 +190,9 @@ const Products = () => {
               <div className="no-products-icon">🔍</div>
               <h3>Không tìm thấy sản phẩm</h3>
               <p>Hãy thử thay đổi bộ lọc để tìm kiếm sản phẩm khác</p>
-              <button 
+              <button
                 className="btn btn-primary"
-                onClick={() => setSelectedCategory('all')}
+                onClick={() => setSelectedCategory("all")}
               >
                 Xem tất cả sản phẩm
               </button>

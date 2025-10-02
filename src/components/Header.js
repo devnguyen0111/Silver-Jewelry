@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import './Header.css';
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import "./Header.css";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,35 +21,35 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="logo">
             <span className="logo-icon">💍</span>
-            <span className="logo-text">Silver Jewelry</span>
+            <span className="logo-text">Blink Jewelry</span>
           </Link>
 
           {/* Navigation */}
-          <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
-            <Link 
-              to="/" 
-              className={`nav-link ${isActive('/') ? 'active' : ''}`}
+          <nav className={`nav ${isMenuOpen ? "nav-open" : ""}`}>
+            <Link
+              to="/"
+              className={`nav-link ${isActive("/") ? "active" : ""}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Trang chủ
             </Link>
-            <Link 
-              to="/products" 
-              className={`nav-link ${isActive('/products') ? 'active' : ''}`}
+            <Link
+              to="/products"
+              className={`nav-link ${isActive("/products") ? "active" : ""}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Sản phẩm
             </Link>
-            <Link 
-              to="/about" 
-              className={`nav-link ${isActive('/about') ? 'active' : ''}`}
+            <Link
+              to="/about"
+              className={`nav-link ${isActive("/about") ? "active" : ""}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Giới thiệu
             </Link>
-            <Link 
-              to="/contact" 
-              className={`nav-link ${isActive('/contact') ? 'active' : ''}`}
+            <Link
+              to="/contact"
+              className={`nav-link ${isActive("/contact") ? "active" : ""}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Liên hệ
@@ -68,8 +68,8 @@ const Header = () => {
           </div>
 
           {/* Mobile menu button */}
-          <button 
-            className={`mobile-menu-btn ${isMenuOpen ? 'active' : ''}`}
+          <button
+            className={`mobile-menu-btn ${isMenuOpen ? "active" : ""}`}
             onClick={toggleMenu}
           >
             <span></span>

@@ -13,7 +13,7 @@
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 15px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .page-subtitle {
@@ -113,6 +113,8 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   position: relative;
+  display: flex; /* giữ tỉ lệ, tránh chèn chữ */
+  flex-direction: column;
 }
 
 .product-card:hover {
@@ -130,6 +132,7 @@
   position: relative;
   overflow: hidden;
   height: 250px;
+  flex: 0 0 250px; /* cố định chiều cao vùng ảnh */
 }
 
 .product-image img {
@@ -169,6 +172,9 @@
 
 .product-info {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto; /* cho phần info giãn, giữ actions dưới cùng */
 }
 
 .product-category {
@@ -224,18 +230,27 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 15px;
+  flex-wrap: wrap; /* tránh tràn dòng khi giá dài */
 }
 
 .current-price {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: #e74c3c;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .original-price {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #6c757d;
   text-decoration: line-through;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .product-features {
@@ -260,6 +275,7 @@
   padding: 0 20px 20px;
   display: flex;
   gap: 10px;
+  margin-top: auto; /* đẩy actions xuống cuối thẻ */
 }
 
 .btn {

@@ -7,8 +7,10 @@
 
 .container {
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .footer-content {
@@ -23,7 +25,7 @@
   font-weight: 600;
   color: #f39c12;
   margin-bottom: 20px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .footer-logo {
@@ -41,7 +43,7 @@
 .logo-text {
   font-size: 1.5rem;
   font-weight: 700;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .footer-description {
@@ -135,7 +137,7 @@
   font-weight: 600;
   color: #f39c12;
   margin-bottom: 8px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .newsletter-text p {

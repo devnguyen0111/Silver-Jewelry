@@ -1,182 +1,203 @@
-import React from 'react';
-import './About.css';
+import React from "react";
+import "./About.css";
 
 const About = () => {
   return (
-    <div className="about-page">
-      <div className="about-hero">
+    <main className="about" role="main">
+      <header className="about__hero">
         <div className="container">
-          <h1 className="page-title">Về chúng tôi</h1>
-          <p className="page-subtitle">
+          <h1 className="about__title">Về chúng tôi</h1>
+          <p className="about__subtitle">
             Hành trình tạo nên những món trang sức bạc cao cấp và ý nghĩa
           </p>
         </div>
-      </div>
+      </header>
 
-      <div className="about-content">
+      <section className="about__section">
         <div className="container">
-          {/* Story Section */}
-          <section className="story-section">
-            <div className="story-content">
-              <div className="story-text">
-                <h2>Câu chuyện của chúng tôi</h2>
-                <p>
-                  Silver Jewelry Store được thành lập vào năm 2013 với niềm đam mê sâu sắc 
-                  về nghệ thuật chế tác trang sức bạc. Từ một xưởng nhỏ với chỉ vài nghệ nhân, 
-                  chúng tôi đã phát triển thành một thương hiệu uy tín trong lĩnh vực trang sức bạc cao cấp.
-                </p>
-                <p>
-                  Với triết lý "Tạo nên vẻ đẹp từ những điều đơn giản nhất", chúng tôi tập trung 
-                  vào việc chế tác những món trang sức tinh xảo, mang đậm tính nghệ thuật và ý nghĩa 
-                  sâu sắc. Mỗi sản phẩm của chúng tôi đều được chế tác thủ công với sự tỉ mỉ và 
-                  tình yêu nghề.
-                </p>
-              </div>
-              <div className="story-image">
-                <img 
-                  src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=500&h=400&fit=crop&crop=center" 
-                  alt="Xưởng chế tác trang sức"
-                />
-              </div>
+          <div className="about__grid">
+            <div className="about__text">
+              <h2 className="about__heading2">Câu chuyện của chúng tôi</h2>
+              <p>
+                Blink Jewelry Store được thành lập vào năm 2013 với niềm đam mê
+                về nghệ thuật chế tác trang sức bạc. Từ một xưởng nhỏ với vài
+                nghệ nhân, chúng tôi đã trở thành thương hiệu uy tín trong lĩnh
+                vực trang sức bạc cao cấp.
+              </p>
+              <p>
+                Với triết lý "Tạo nên vẻ đẹp từ những điều đơn giản nhất", mỗi
+                sản phẩm đều được chế tác thủ công tỉ mỉ, gửi gắm tình yêu nghề
+                và tinh thần sáng tạo.
+              </p>
             </div>
-          </section>
-
-          {/* Values Section */}
-          <section className="values-section">
-            <h2>Giá trị cốt lõi</h2>
-            <div className="values-grid">
-              <div className="value-card">
-                <div className="value-icon">✨</div>
-                <h3>Chất lượng cao cấp</h3>
-                <p>
-                  Chúng tôi chỉ sử dụng bạc 925 nguyên chất, được kiểm định chất lượng 
-                  nghiêm ngặt để đảm bảo độ bền và vẻ đẹp lâu dài.
-                </p>
-              </div>
-              <div className="value-card">
-                <div className="value-icon">🎨</div>
-                <h3>Thiết kế độc đáo</h3>
-                <p>
-                  Mỗi thiết kế đều được tạo ra bởi các nghệ nhân giàu kinh nghiệm, 
-                  kết hợp giữa truyền thống và hiện đại.
-                </p>
-              </div>
-              <div className="value-card">
-                <div className="value-icon">🛡️</div>
-                <h3>Cam kết bảo hành</h3>
-                <p>
-                  Chúng tôi cam kết bảo hành 12-24 tháng cho mọi sản phẩm và hỗ trợ 
-                  bảo dưỡng miễn phí.
-                </p>
-              </div>
-              <div className="value-card">
-                <div className="value-icon">💝</div>
-                <h3>Dịch vụ tận tâm</h3>
-                <p>
-                  Đội ngũ nhân viên chuyên nghiệp, sẵn sàng tư vấn và hỗ trợ khách hàng 
-                  trong mọi tình huống.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* Team Section */}
-          <section className="team-section">
-            <h2>Đội ngũ của chúng tôi</h2>
-            <div className="team-grid">
-              <div className="team-member">
-                <div className="member-avatar">
-                  <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" 
-                    alt="Nguyễn Văn Minh"
-                  />
-                </div>
-                <h3>Nguyễn Văn Minh</h3>
-                <p className="member-role">Giám đốc sáng tạo</p>
-                <p className="member-bio">
-                  Với 15 năm kinh nghiệm trong ngành trang sức, anh Minh là người 
-                  dẫn dắt tầm nhìn nghệ thuật của thương hiệu.
-                </p>
-              </div>
-              <div className="team-member">
-                <div className="member-avatar">
-                  <img 
-                    src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=200&h=200&fit=crop&crop=face" 
-                    alt="Trần Thị Lan"
-                  />
-                </div>
-                <h3>Trần Thị Lan</h3>
-                <p className="member-role">Nghệ nhân chế tác</p>
-                <p className="member-bio">
-                  Chuyên gia chế tác với đôi tay vàng, chị Lan tạo nên những tác phẩm 
-                  trang sức tinh xảo nhất.
-                </p>
-              </div>
-              <div className="team-member">
-                <div className="member-avatar">
-                  <img 
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face" 
-                    alt="Lê Hoàng Nam"
-                  />
-                </div>
-                <h3>Lê Hoàng Nam</h3>
-                <p className="member-role">Quản lý chất lượng</p>
-                <p className="member-bio">
-                  Anh Nam đảm bảo mọi sản phẩm đều đạt tiêu chuẩn chất lượng cao nhất 
-                  trước khi đến tay khách hàng.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* Stats Section */}
-          <section className="stats-section">
-            <div className="stats-grid">
-              <div className="stat-item">
-                <div className="stat-number">10+</div>
-                <div className="stat-label">Năm kinh nghiệm</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-number">5000+</div>
-                <div className="stat-label">Khách hàng hài lòng</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-number">2000+</div>
-                <div className="stat-label">Sản phẩm đã chế tác</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-number">98%</div>
-                <div className="stat-label">Tỷ lệ hài lòng</div>
-              </div>
-            </div>
-          </section>
-
-          {/* Mission Section */}
-          <section className="mission-section">
-            <div className="mission-content">
-              <div className="mission-text">
-                <h2>Sứ mệnh của chúng tôi</h2>
-                <p>
-                  Chúng tôi cam kết mang đến cho khách hàng những món trang sức bạc cao cấp, 
-                  không chỉ đẹp về hình thức mà còn có ý nghĩa sâu sắc. Mỗi sản phẩm của chúng tôi 
-                  đều được chế tác với tình yêu và sự tôn trọng dành cho nghệ thuật trang sức.
-                </p>
-                <p>
-                  Chúng tôi tin rằng trang sức không chỉ là món đồ trang trí mà còn là biểu tượng 
-                  của tình yêu, kỷ niệm và những khoảnh khắc đặc biệt trong cuộc sống.
-                </p>
-              </div>
-              <div className="mission-image">
-                <img 
-                  src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500&h=400&fit=crop&crop=center" 
-                  alt="Sứ mệnh của chúng tôi"
-                />
-              </div>
-            </div>
-          </section>
+            <figure className="about__image">
+              <img
+                src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=900&h=600&fit=crop&crop=center"
+                alt="Trang sức bạc được chụp trên nền lá"
+                loading="lazy"
+              />
+            </figure>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+
+      <section className="about__section" aria-labelledby="team-heading">
+        <div className="container">
+          <h2 id="team-heading" className="about__heading">
+            Đội ngũ của chúng tôi
+          </h2>
+          <div className="about__team">
+            <article className="about__member">
+              <div className="about__avatar">
+                <img
+                  src="https://cdn.devnguyen.xyz/images/av1.jpg?w=240&h=240&fit=crop&crop=face"
+                  alt="Hoàng Ngọc Minh Thư"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Hoàng Ngọc Minh Thư</h3>
+              <p className="about__role">Giám đốc sáng tạo</p>
+              <p className="about__bio">
+                Lãnh đạo định hướng thiết kế, xây dựng ngôn ngữ thẩm mỹ và trải
+                nghiệm thương hiệu nhất quán.
+              </p>
+            </article>
+
+            <article className="about__member">
+              <div className="about__avatar">
+                <img
+                  src="https://cdn.devnguyen.xyz/images/av2.jpg?w=240&h=240&fit=crop&crop=face"
+                  alt="Nguyễn Phương Gia Nhi"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Nguyễn Phương Gia Nhi</h3>
+              <p className="about__role">Nghệ nhân chế tác</p>
+              <p className="about__bio">
+                Chuyên gia chế tác bạc 925 thủ công, am hiểu kỹ thuật đính đá và
+                hoàn thiện bề mặt cao cấp.
+              </p>
+            </article>
+
+            <article className="about__member">
+              <div className="about__avatar">
+                <img
+                  src="https://cdn.devnguyen.xyz/images/av3.jpg?w=240&h=240&fit=crop&crop=face"
+                  alt="Đoàn Thị Thu Trang"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Đoàn Thị Thu Trang</h3>
+              <p className="about__role">Nghệ nhân chế tác</p>
+              <p className="about__bio">
+                Tập trung vào chi tiết tinh xảo, tối ưu cấu trúc để đảm bảo độ
+                bền và sự thoải mái khi sử dụng.
+              </p>
+            </article>
+
+            <article className="about__member">
+              <div className="about__avatar">
+                <img
+                  src="https://cdn.devnguyen.xyz/images/av4.jpg?w=240&h=240&fit=crop&crop=face"
+                  alt="Trần Cẩm Ly"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Trần Cẩm Ly</h3>
+              <p className="about__role">Quản lý sản phẩm</p>
+              <p className="about__bio">
+                Quản trị vòng đời sản phẩm; phối hợp thiết kế, sản xuất và QA
+                nhằm duy trì tiêu chuẩn chất lượng nghiêm ngặt.
+              </p>
+            </article>
+
+            <article className="about__member">
+              <div className="about__avatar">
+                <img
+                  src="https://cdn.devnguyen.xyz/images/av5.jpg?w=240&h=240&fit=crop&crop=face"
+                  alt="Phan Ngọc Ánh"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Phan Ngọc Ánh</h3>
+              <p className="about__role">Quản lý kinh doanh</p>
+              <p className="about__bio">
+                Phụ trách chiến lược kinh doanh và quan hệ đối tác, thúc đẩy
+                tăng trưởng doanh thu bền vững.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="about__section about__section--muted">
+        <div className="container">
+          <h2 className="about__heading">Giá trị cốt lõi</h2>
+          <div className="about__values">
+            <article className="about__card">
+              <div className="about__icon" aria-hidden>
+                ✨
+              </div>
+              <h3>Chất lượng cao cấp</h3>
+              <p>
+                Bạc 925 chuẩn, kiểm định nghiêm ngặt, bền đẹp theo thời gian.
+              </p>
+            </article>
+            <article className="about__card">
+              <div className="about__icon" aria-hidden>
+                🎨
+              </div>
+              <h3>Thiết kế độc đáo</h3>
+              <p>
+                Kết hợp tinh tế giữa truyền thống và hiện đại, mang dấu ấn
+                riêng.
+              </p>
+            </article>
+            <article className="about__card">
+              <div className="about__icon" aria-hidden>
+                🛡️
+              </div>
+              <h3>Cam kết bảo hành</h3>
+              <p>
+                Bảo hành 12–24 tháng, hỗ trợ làm sạch và bảo dưỡng miễn phí.
+              </p>
+            </article>
+            <article className="about__card">
+              <div className="about__icon" aria-hidden>
+                💝
+              </div>
+              <h3>Dịch vụ tận tâm</h3>
+              <p>Đồng hành cùng khách hàng với trải nghiệm chuyên nghiệp.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="about__section">
+        <div className="container">
+          <h2 className="about__heading">Sứ mệnh của chúng tôi</h2>
+          <div className="about__grid">
+            <div className="about__text">
+              <p>
+                Chúng tôi mang đến những món trang sức vừa đẹp vừa có ý nghĩa,
+                là biểu tượng của tình yêu và kỷ niệm đặc biệt.
+              </p>
+              <p>
+                Mỗi thiết kế được tạo nên bằng niềm đam mê, sự tỉ mỉ và sự tôn
+                trọng dành cho nghệ thuật thủ công.
+              </p>
+            </div>
+            <figure className="about__image">
+              <img
+                src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=900&h=600&fit=crop&crop=center"
+                alt="Dây chuyền bạc trong hộp quà"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 };
 

@@ -1,32 +1,34 @@
-import React, { useState } from 'react';
-import './Contact.css';
+import React, { useState } from "react";
+import "./Contact.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
   });
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // Logic gửi form sẽ được implement sau
-    alert('Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi trong thời gian sớm nhất.');
+    alert(
+      "Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi trong thời gian sớm nhất."
+    );
     setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      subject: '',
-      message: ''
+      name: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: "",
     });
   };
 
@@ -47,14 +49,16 @@ const Contact = () => {
             {/* Contact Information */}
             <div className="contact-info">
               <h2>Thông tin liên hệ</h2>
-              
+
               <div className="contact-item">
                 <div className="contact-icon">📍</div>
                 <div className="contact-details">
                   <h3>Địa chỉ</h3>
                   <p>
-                    123 Đường Trần Hưng Đạo<br />
-                    Quận 1, TP. Hồ Chí Minh<br />
+                    123 Đường Trần Hưng Đạo
+                    <br />
+                    Quận 1, TP. Hồ Chí Minh
+                    <br />
                     Việt Nam
                   </p>
                 </div>
@@ -65,8 +69,10 @@ const Contact = () => {
                 <div className="contact-details">
                   <h3>Điện thoại</h3>
                   <p>
-                    Hotline: 1900 1234<br />
-                    Di động: 0987 654 321<br />
+                    Hotline: 1900 1234
+                    <br />
+                    Di động: 0987 654 321
+                    <br />
                     Fax: (028) 1234 5678
                   </p>
                 </div>
@@ -77,9 +83,11 @@ const Contact = () => {
                 <div className="contact-details">
                   <h3>Email</h3>
                   <p>
-                    info@silverjewelry.com<br />
-                    sales@silverjewelry.com<br />
-                    support@silverjewelry.com
+                    info@blinkjewelry.com
+                    <br />
+                    sales@blinkjewelry.com
+                    <br />
+                    support@blinkjewelry.com
                   </p>
                 </div>
               </div>
@@ -89,8 +97,10 @@ const Contact = () => {
                 <div className="contact-details">
                   <h3>Giờ làm việc</h3>
                   <p>
-                    Thứ 2 - Thứ 6: 8:00 - 18:00<br />
-                    Thứ 7: 8:00 - 12:00<br />
+                    Thứ 2 - Thứ 6: 8:00 - 18:00
+                    <br />
+                    Thứ 7: 8:00 - 12:00
+                    <br />
                     Chủ nhật: Nghỉ
                   </p>
                 </div>
@@ -119,8 +129,8 @@ const Contact = () => {
             <div className="contact-form-section">
               <h2>Gửi tin nhắn cho chúng tôi</h2>
               <p className="form-description">
-                Hãy điền thông tin vào form bên dưới và chúng tôi sẽ liên hệ lại với bạn 
-                trong thời gian sớm nhất.
+                Hãy điền thông tin vào form bên dưới và chúng tôi sẽ liên hệ lại
+                với bạn trong thời gian sớm nhất.
               </p>
 
               <form className="contact-form" onSubmit={handleSubmit}>
@@ -209,8 +219,10 @@ const Contact = () => {
                 <div className="map-icon">🗺️</div>
                 <h3>Bản đồ cửa hàng</h3>
                 <p>
-                  123 Đường Trần Hưng Đạo, Quận 1, TP. Hồ Chí Minh<br />
-                  <strong>Chỉ đường:</strong> Từ Bến Thành đi thẳng 500m, rẽ trái vào đường Trần Hưng Đạo
+                  123 Đường Trần Hưng Đạo, Quận 1, TP. Hồ Chí Minh
+                  <br />
+                  <strong>Chỉ đường:</strong> Từ Bến Thành đi thẳng 500m, rẽ
+                  trái vào đường Trần Hưng Đạo
                 </p>
                 <button className="btn btn-outline">
                   Xem trên Google Maps
@@ -226,29 +238,31 @@ const Contact = () => {
               <div className="faq-item">
                 <h3>Làm thế nào để đặt hàng?</h3>
                 <p>
-                  Bạn có thể đặt hàng trực tiếp tại cửa hàng, qua website hoặc gọi hotline. 
-                  Chúng tôi hỗ trợ thanh toán bằng tiền mặt, chuyển khoản và thẻ tín dụng.
+                  Bạn có thể đặt hàng trực tiếp tại cửa hàng, qua website hoặc
+                  gọi hotline. Chúng tôi hỗ trợ thanh toán bằng tiền mặt, chuyển
+                  khoản và thẻ tín dụng.
                 </p>
               </div>
               <div className="faq-item">
                 <h3>Thời gian giao hàng là bao lâu?</h3>
                 <p>
-                  Đối với sản phẩm có sẵn: 1-2 ngày làm việc.<br />
+                  Đối với sản phẩm có sẵn: 1-2 ngày làm việc.
+                  <br />
                   Đối với sản phẩm đặt làm: 7-14 ngày làm việc.
                 </p>
               </div>
               <div className="faq-item">
                 <h3>Chính sách bảo hành như thế nào?</h3>
                 <p>
-                  Chúng tôi bảo hành 12-24 tháng cho mọi sản phẩm. Hỗ trợ bảo dưỡng và 
-                  sửa chữa miễn phí trong thời gian bảo hành.
+                  Chúng tôi bảo hành 12-24 tháng cho mọi sản phẩm. Hỗ trợ bảo
+                  dưỡng và sửa chữa miễn phí trong thời gian bảo hành.
                 </p>
               </div>
               <div className="faq-item">
                 <h3>Có thể đổi trả sản phẩm không?</h3>
                 <p>
-                  Chúng tôi hỗ trợ đổi trả trong vòng 7 ngày kể từ ngày mua hàng, 
-                  với điều kiện sản phẩm còn nguyên vẹn và có hóa đơn.
+                  Chúng tôi hỗ trợ đổi trả trong vòng 7 ngày kể từ ngày mua
+                  hàng, với điều kiện sản phẩm còn nguyên vẹn và có hóa đơn.
                 </p>
               </div>
             </div>

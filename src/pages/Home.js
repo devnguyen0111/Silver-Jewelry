@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Home.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Home.css";
 
 const Home = () => {
   return (
@@ -14,9 +14,9 @@ const Home = () => {
               <span className="highlight"> cho mọi phong cách</span>
             </h1>
             <p className="hero-description">
-              Khám phá bộ sưu tập trang sức bạc tinh xảo, được chế tác thủ công 
-              với chất liệu cao cấp và thiết kế độc đáo. Tạo nên vẻ đẹp riêng biệt 
-              cho bạn trong mọi dịp đặc biệt.
+              Khám phá bộ sưu tập trang sức bạc tinh xảo, được chế tác thủ công
+              với chất liệu cao cấp và thiết kế độc đáo. Tạo nên vẻ đẹp riêng
+              biệt cho bạn trong mọi dịp đặc biệt.
             </p>
             <div className="hero-buttons">
               <Link to="/products" className="btn btn-primary">
@@ -28,8 +28,8 @@ const Home = () => {
             </div>
           </div>
           <div className="hero-image">
-            <img 
-              src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&h=600&fit=crop&crop=center" 
+            <img
+              src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&h=600&fit=crop&crop=center"
               alt="Trang sức bạc cao cấp"
             />
           </div>
@@ -44,17 +44,25 @@ const Home = () => {
             <div className="feature-card">
               <div className="feature-icon">✨</div>
               <h3>Chất lượng cao cấp</h3>
-              <p>Sử dụng bạc 925 nguyên chất, được kiểm định chất lượng nghiêm ngặt</p>
+              <p>
+                Sử dụng bạc 925 nguyên chất, được kiểm định chất lượng nghiêm
+                ngặt
+              </p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">🎨</div>
               <h3>Thiết kế độc đáo</h3>
-              <p>Được thiết kế bởi các nghệ nhân giàu kinh nghiệm với phong cách hiện đại</p>
+              <p>
+                Được thiết kế bởi các nghệ nhân giàu kinh nghiệm với phong cách
+                hiện đại
+              </p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">🔧</div>
               <h3>Chế tác thủ công</h3>
-              <p>Mỗi sản phẩm được chế tác tỉ mỉ bằng tay với độ chính xác cao</p>
+              <p>
+                Mỗi sản phẩm được chế tác tỉ mỉ bằng tay với độ chính xác cao
+              </p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">🛡️</div>
@@ -72,10 +80,11 @@ const Home = () => {
             <div className="about-text">
               <h2 className="section-title">Về chúng tôi</h2>
               <p className="about-description">
-                Silver Jewelry Store được thành lập với niềm đam mê tạo ra những món trang sức 
-                bạc cao cấp, mang đến vẻ đẹp tinh tế và sang trọng cho người sử dụng. 
-                Với hơn 10 năm kinh nghiệm trong ngành trang sức, chúng tôi tự hào là 
-                địa chỉ uy tín cho những ai yêu thích vẻ đẹp của bạc.
+                Blink Jewelry Store được thành lập với niềm đam mê tạo ra những
+                món trang sức bạc cao cấp, mang đến vẻ đẹp tinh tế và sang trọng
+                cho người sử dụng. Với hơn 10 năm kinh nghiệm trong ngành trang
+                sức, chúng tôi tự hào là địa chỉ uy tín cho những ai yêu thích
+                vẻ đẹp của bạc.
               </p>
               <div className="about-stats">
                 <div className="stat">
@@ -96,8 +105,8 @@ const Home = () => {
               </Link>
             </div>
             <div className="about-image">
-              <img 
-                src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=500&h=600&fit=crop&crop=center" 
+              <img
+                src="https://cdn.devnguyen.xyz/images/nhan3.jpg?w=500&h=600&fit=crop&crop=center"
                 alt="Cửa hàng trang sức bạc"
               />
             </div>
@@ -111,24 +120,24 @@ const Home = () => {
           <h2 className="section-title">Sản phẩm nổi bật</h2>
           <div className="products-preview">
             <div className="product-preview">
-              <img 
-                src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=300&h=300&fit=crop&crop=center" 
+              <img
+                src="https://cdn.devnguyen.xyz/images/nhan2.jpg?w=400&h=400&fit=crop&crop=center"
                 alt="Nhẫn bạc nữ hoàng hoa hồng"
               />
               <h3>Nhẫn bạc nữ hoàng hoa hồng</h3>
               <p className="price">850.000đ</p>
             </div>
             <div className="product-preview">
-              <img 
-                src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=300&h=300&fit=crop&crop=center" 
+              <img
+                src="https://cdn.devnguyen.xyz/images/daychuyen1.jpg?w=400&h=400&fit=crop&crop=center"
                 alt="Dây chuyền bạc mặt trăng"
               />
               <h3>Dây chuyền bạc mặt trăng</h3>
               <p className="price">1.200.000đ</p>
             </div>
             <div className="product-preview">
-              <img 
-                src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=300&h=300&fit=crop&crop=center" 
+              <img
+                src="https://cdn.devnguyen.xyz/images/bongtai1.jpg?w=400&h=400&fit=crop&crop=center"
                 alt="Bông tai bạc hoa anh đào"
               />
               <h3>Bông tai bạc hoa anh đào</h3>
@@ -148,7 +157,10 @@ const Home = () => {
         <div className="container">
           <div className="cta-content">
             <h2>Sẵn sàng tìm kiếm trang sức hoàn hảo?</h2>
-            <p>Khám phá bộ sưu tập đa dạng của chúng tôi và tìm ra món trang sức phù hợp với phong cách của bạn</p>
+            <p>
+              Khám phá bộ sưu tập đa dạng của chúng tôi và tìm ra món trang sức
+              phù hợp với phong cách của bạn
+            </p>
             <Link to="/products" className="btn btn-white">
               Bắt đầu mua sắm
             </Link>

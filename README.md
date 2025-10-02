@@ -1,4 +1,4 @@
-# Silver Jewelry Store - Trang web bán trang sức bạc
+# Blink Jewelry Store - Trang web bán trang sức bạc
 
 Một ứng dụng web React.js hiện đại cho cửa hàng trang sức bạc cao cấp với giao diện đẹp và trải nghiệm người dùng tuyệt vời.
 
@@ -15,26 +15,30 @@ Một ứng dụng web React.js hiện đại cho cửa hàng trang sức bạc 
 ## 🚀 Cài đặt và chạy
 
 ### Yêu cầu hệ thống
+
 - Node.js (phiên bản 14 trở lên)
 - npm hoặc yarn
 
 ### Các bước cài đặt
 
 1. **Clone hoặc tải về dự án**
+
    ```bash
    # Nếu bạn có git
    git clone <repository-url>
    cd silver-jewelry-store
-   
+
    # Hoặc giải nén file zip vào thư mục dự án
    ```
 
 2. **Cài đặt dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Chạy ứng dụng**
+
    ```bash
    npm start
    ```
@@ -87,6 +91,7 @@ silver-jewelry-store/
 ## 📱 Responsive Design
 
 Ứng dụng được thiết kế responsive hoàn toàn:
+
 - **Desktop**: Giao diện đầy đủ với grid layout
 - **Tablet**: Tối ưu cho màn hình trung bình
 - **Mobile**: Giao diện touch-friendly với menu hamburger
@@ -101,6 +106,7 @@ silver-jewelry-store/
 ## 📊 Dữ liệu mẫu
 
 Dự án bao gồm 6 sản phẩm trang sức bạc mẫu:
+
 - Nhẫn bạc nữ hoàng hoa hồng
 - Dây chuyền bạc mặt trăng
 - Bông tai bạc hoa anh đào
@@ -111,6 +117,7 @@ Dự án bao gồm 6 sản phẩm trang sức bạc mẫu:
 ## 🔧 Tùy chỉnh
 
 ### Thêm sản phẩm mới
+
 Chỉnh sửa file `src/data/products.js` để thêm sản phẩm mới:
 
 ```javascript
@@ -131,9 +138,11 @@ Chỉnh sửa file `src/data/products.js` để thêm sản phẩm mới:
 ```
 
 ### Thay đổi màu sắc
+
 Chỉnh sửa CSS variables trong các file CSS để thay đổi màu chủ đạo.
 
 ### Thêm trang mới
+
 1. Tạo component trong `src/pages/`
 2. Thêm route trong `src/App.js`
 3. Thêm link navigation trong `src/components/Header.js`
@@ -156,6 +165,7 @@ File build sẽ được tạo trong thư mục `build/` và sẵn sàng để d
 ## 🤝 Đóng góp
 
 Nếu bạn muốn đóng góp vào dự án:
+
 1. Fork repository
 2. Tạo feature branch
 3. Commit changes
@@ -164,8 +174,8 @@ Nếu bạn muốn đóng góp vào dự án:
 
 ## 📞 Liên hệ
 
-- **Email**: info@silverjewelry.com
-- **Website**: www.silverjewelry.com
+- **Email**: info@blinkjewelry.com
+- **Website**: www.blinkjewelry.com
 - **Điện thoại**: 1900 1234
 
 ## 📝 License
@@ -175,6 +185,7 @@ Dự án này được phát hành dưới MIT License. Xem file LICENSE để b
 ---
 
 **Lưu ý**: Đây là dự án demo với dữ liệu mẫu. Để sử dụng trong thực tế, bạn cần:
+
 - Kết nối với database thực
 - Implement backend API
 - Thêm chức năng thanh toán

@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Footer.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -11,11 +11,11 @@ const Footer = () => {
           <div className="footer-section">
             <div className="footer-logo">
               <span className="logo-icon">💍</span>
-              <span className="logo-text">Silver Jewelry</span>
+              <span className="logo-text">Blink Jewelry</span>
             </div>
             <p className="footer-description">
-              Chuyên cung cấp trang sức bạc cao cấp, được chế tác thủ công 
-              với chất liệu nguyên chất và thiết kế độc đáo.
+              Chuyên cung cấp trang sức bạc cao cấp, được chế tác thủ công với
+              chất liệu nguyên chất và thiết kế độc đáo.
             </p>
             <div className="social-links">
               <a href="#" className="social-link" aria-label="Facebook">
@@ -37,10 +37,18 @@ const Footer = () => {
           <div className="footer-section">
             <h3>Liên kết nhanh</h3>
             <ul className="footer-links">
-              <li><Link to="/">Trang chủ</Link></li>
-              <li><Link to="/products">Sản phẩm</Link></li>
-              <li><Link to="/about">Giới thiệu</Link></li>
-              <li><Link to="/contact">Liên hệ</Link></li>
+              <li>
+                <Link to="/">Trang chủ</Link>
+              </li>
+              <li>
+                <Link to="/products">Sản phẩm</Link>
+              </li>
+              <li>
+                <Link to="/about">Giới thiệu</Link>
+              </li>
+              <li>
+                <Link to="/contact">Liên hệ</Link>
+              </li>
             </ul>
           </div>
 
@@ -48,10 +56,18 @@ const Footer = () => {
           <div className="footer-section">
             <h3>Danh mục sản phẩm</h3>
             <ul className="footer-links">
-              <li><Link to="/products?category=Nhẫn">Nhẫn</Link></li>
-              <li><Link to="/products?category=Dây chuyền">Dây chuyền</Link></li>
-              <li><Link to="/products?category=Bông tai">Bông tai</Link></li>
-              <li><Link to="/products?category=Vòng tay">Vòng tay</Link></li>
+              <li>
+                <Link to="/products?category=Nhẫn">Nhẫn</Link>
+              </li>
+              <li>
+                <Link to="/products?category=Dây chuyền">Dây chuyền</Link>
+              </li>
+              <li>
+                <Link to="/products?category=Bông tai">Bông tai</Link>
+              </li>
+              <li>
+                <Link to="/products?category=Vòng tay">Vòng tay</Link>
+              </li>
             </ul>
           </div>
 
@@ -69,7 +85,7 @@ const Footer = () => {
               </div>
               <div className="contact-item">
                 <span className="contact-icon">✉️</span>
-                <span>info@silverjewelry.com</span>
+                <span>info@blinkjewelry.com</span>
               </div>
               <div className="contact-item">
                 <span className="contact-icon">🕒</span>
@@ -87,14 +103,12 @@ const Footer = () => {
               <p>Nhận thông tin về sản phẩm mới và ưu đãi đặc biệt</p>
             </div>
             <div className="newsletter-form">
-              <input 
-                type="email" 
+              <input
+                type="email"
                 placeholder="Nhập địa chỉ email của bạn"
                 className="newsletter-input"
               />
-              <button className="newsletter-btn">
-                Đăng ký
-              </button>
+              <button className="newsletter-btn">Đăng ký</button>
             </div>
           </div>
         </div>
@@ -103,7 +117,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="footer-bottom-content">
             <p className="copyright">
-              © 2024 Silver Jewelry Store. Tất cả quyền được bảo lưu.
+              © 2024 Blink Jewelry Store. Tất cả quyền được bảo lưu.
             </p>
             <div className="footer-bottom-links">
               <Link to="/privacy">Chính sách bảo mật</Link>
