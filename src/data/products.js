@@ -2,7 +2,7 @@ export const products = [
   {
     id: 1,
     name: "Nhẫn bạc nữ hoàng hoa hồng",
-    price: 850000,
+    price: 250000,
     originalPrice: 1200000,
     image:
       "https://cdn.devnguyen.xyz/images/nhan2.jpg?w=400&h=400&fit=crop&crop=center",
@@ -27,7 +27,7 @@ export const products = [
   {
     id: 2,
     name: "Dây chuyền bạc mặt trăng",
-    price: 890000,
+    price: 500000,
     originalPrice: 1500000,
     image:
       "https://cdn.devnguyen.xyz/images/daychuyen1.jpg?w=400&h=400&fit=crop&crop=center",
@@ -52,7 +52,7 @@ export const products = [
   {
     id: 3,
     name: "Bông tai bạc hoa anh đào",
-    price: 680000,
+    price: 300000,
     originalPrice: 900000,
     image:
       "https://cdn.devnguyen.xyz/images/bongtai1.jpg?w=400&h=400&fit=crop&crop=center",
@@ -76,8 +76,8 @@ export const products = [
   },
   {
     id: 4,
-    name: "Vòng tay bạc xoắn ốc",
-    price: 900000,
+    name: "Vòng tay nơ bạc",
+    price: 350000,
     originalPrice: 1300000,
     image:
       "https://cdn.devnguyen.xyz/images/vongtay1.jpg?w=400&h=400&fit=crop&crop=center",
@@ -102,7 +102,7 @@ export const products = [
   {
     id: 5,
     name: "Nhẫn nam bạc cổ điển",
-    price: 890000,
+    price: 350000,
     originalPrice: 1400000,
     image:
       "https://cdn.devnguyen.xyz/images/nhan1.jpg?w=400&h=400&fit=crop&crop=center",

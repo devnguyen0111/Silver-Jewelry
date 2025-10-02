@@ -108,7 +108,7 @@ const Products = () => {
                 <Link to={`/product/${product.id}`} className="product-link">
                   <div className="product-image">
                     <img src={product.image} alt={product.name} />
-                    {product.originalPrice > product.price && (
+                    {/* {product.originalPrice > product.price && (
                       <div className="discount-badge">
                         -
                         {getDiscountPercentage(
@@ -117,7 +117,7 @@ const Products = () => {
                         )}
                         %
                       </div>
-                    )}
+                    )} */}
                     {!product.inStock && (
                       <div className="out-of-stock-badge">Hết hàng</div>
                     )}
@@ -149,11 +149,11 @@ const Products = () => {
                       <span className="current-price">
                         {formatPrice(product.price)}
                       </span>
-                      {product.originalPrice > product.price && (
+                      {/* {product.originalPrice > product.price && (
                         <span className="original-price">
                           {formatOriginalPrice(product.originalPrice)}
                         </span>
-                      )}
+                      )} */}
                     </div>
 
                     <div className="product-features">

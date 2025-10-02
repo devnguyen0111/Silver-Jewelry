@@ -125,7 +125,7 @@ const Home = () => {
                 alt="Nhẫn bạc nữ hoàng hoa hồng"
               />
               <h3>Nhẫn bạc nữ hoàng hoa hồng</h3>
-              <p className="price">850.000đ</p>
+              <p className="price">250.000đ</p>
             </div>
             <div className="product-preview">
               <img
@@ -133,7 +133,7 @@ const Home = () => {
                 alt="Dây chuyền bạc mặt trăng"
               />
               <h3>Dây chuyền bạc mặt trăng</h3>
-              <p className="price">1.200.000đ</p>
+              <p className="price">500.000đ</p>
             </div>
             <div className="product-preview">
               <img
@@ -141,7 +141,7 @@ const Home = () => {
                 alt="Bông tai bạc hoa anh đào"
               />
               <h3>Bông tai bạc hoa anh đào</h3>
-              <p className="price">680.000đ</p>
+              <p className="price">300.000đ</p>
             </div>
           </div>
           <div className="text-center">
