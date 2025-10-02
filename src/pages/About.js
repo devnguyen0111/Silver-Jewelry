@@ -50,7 +50,7 @@ const About = () => {
             <article className="about__member">
               <div className="about__avatar">
                 <img
-                  src="https://cdn.devnguyen.xyz/images/av1.jpg?w=240&h=240&fit=crop&crop=face"
+                  src="https://cdn.devnguyen.xyz/images/av3.jpg?w=240&h=240&fit=crop&crop=face"
                   alt="Hoàng Ngọc Minh Thư"
                   loading="lazy"
                 />
@@ -66,12 +66,12 @@ const About = () => {
             <article className="about__member">
               <div className="about__avatar">
                 <img
-                  src="https://cdn.devnguyen.xyz/images/av2.jpg?w=240&h=240&fit=crop&crop=face"
+                  src="https://cdn.devnguyen.xyz/images/av4.jpg?w=240&h=240&fit=crop&crop=face"
                   alt="Nguyễn Phương Gia Nhi"
                   loading="lazy"
                 />
               </div>
-              <h3>Nguyễn Phương Gia Nhi</h3>
+              <h3>Nguyễn Phương Gia Nghi</h3>
               <p className="about__role">Nghệ nhân chế tác</p>
               <p className="about__bio">
                 Chuyên gia chế tác bạc 925 thủ công, am hiểu kỹ thuật đính đá và
@@ -82,7 +82,7 @@ const About = () => {
             <article className="about__member">
               <div className="about__avatar">
                 <img
-                  src="https://cdn.devnguyen.xyz/images/av3.jpg?w=240&h=240&fit=crop&crop=face"
+                  src="https://cdn.devnguyen.xyz/images/av2.jpg?w=240&h=240&fit=crop&crop=face"
                   alt="Đoàn Thị Thu Trang"
                   loading="lazy"
                 />
@@ -98,16 +98,16 @@ const About = () => {
             <article className="about__member">
               <div className="about__avatar">
                 <img
-                  src="https://cdn.devnguyen.xyz/images/av4.jpg?w=240&h=240&fit=crop&crop=face"
+                  src="https://cdn.devnguyen.xyz/images/av1.jpg?w=240&h=240&fit=crop&crop=face"
                   alt="Trần Cẩm Ly"
                   loading="lazy"
                 />
               </div>
               <h3>Trần Cẩm Ly</h3>
-              <p className="about__role">Quản lý sản phẩm</p>
+              <p className="about__role">Quản lý chất lượng</p>
               <p className="about__bio">
-                Quản trị vòng đời sản phẩm; phối hợp thiết kế, sản xuất và QA
-                nhằm duy trì tiêu chuẩn chất lượng nghiêm ngặt.
+                Đảm bảo mọi sản phẩm đều đạt tiêu chuẩn chất lượng cao nhất
+                trước khi đến tay khách hàng.
               </p>
             </article>
 
@@ -120,10 +120,10 @@ const About = () => {
                 />
               </div>
               <h3>Phan Ngọc Ánh</h3>
-              <p className="about__role">Quản lý kinh doanh</p>
+              <p className="about__role">Quản lý chất lượng</p>
               <p className="about__bio">
-                Phụ trách chiến lược kinh doanh và quan hệ đối tác, thúc đẩy
-                tăng trưởng doanh thu bền vững.
+                Giám sát quy trình kiểm định, phối hợp với nghệ nhân để duy trì
+                sự hoàn hảo trong từng sản phẩm.
               </p>
             </article>
           </div>

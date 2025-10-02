@@ -56,7 +56,7 @@ const Header = () => {
             </Link>
           </nav>
 
-          {/* Action buttons */}
+          {/* Action buttons
           <div className="header-actions">
             <button className="search-btn">
               <span>🔍</span>
@@ -65,7 +65,7 @@ const Header = () => {
               <span>🛒</span>
               <span className="cart-count">0</span>
             </button>
-          </div>
+          </div> */}
 
           {/* Mobile menu button */}
           <button

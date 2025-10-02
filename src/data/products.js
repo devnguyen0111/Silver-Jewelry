@@ -54,7 +54,8 @@ export const products = [
     name: "Bông tai bạc hoa anh đào",
     price: 680000,
     originalPrice: 900000,
-    image: "https://cdn.devnguyen.xyz/images/bongtai1.jpg",
+    image:
+      "https://cdn.devnguyen.xyz/images/bongtai1.jpg?w=400&h=400&fit=crop&crop=center",
     images: [
       "https://cdn.devnguyen.xyz/images/bongtai1.jpg?w=400&h=400&fit=crop&crop=center",
       "https://cdn.devnguyen.xyz/images/bongtai2.jpg?w=400&h=400&fit=crop&crop=center",
@@ -103,11 +104,10 @@ export const products = [
     name: "Nhẫn nam bạc cổ điển",
     price: 890000,
     originalPrice: 1400000,
-    image: "https://cdn.devnguyen.xyz/images/nhan1.jpg",
+    image:
+      "https://cdn.devnguyen.xyz/images/nhan1.jpg?w=400&h=400&fit=crop&crop=center",
     images: [
-      "https://cdn.devnguyen.xyz/images/nhan1.jpg",
-      "https://cdn.devnguyen.xyz/images/bongtai1.jpg",
-      "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=400&h=400&fit=crop&crop=center",
+      "https://cdn.devnguyen.xyz/images/nhan1.jpg?w=400&h=400&fit=crop&crop=center",
     ],
     description:
       "Nhẫn nam bạc với thiết kế cổ điển, sang trọng. Phù hợp cho các quý ông yêu thích phong cách truyền thống nhưng vẫn hiện đại.",
